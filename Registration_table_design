@@ -1,0 +1,28 @@
+USE [Banking]
+GO
+
+/****** Object:  Table [dbo].[Registration]    Script Date: 06-04-2021 16:22:28 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Registration](
+	[Account_No] [bigint] NOT NULL,
+	[Account_Name] [nvarchar](50) NULL,
+	[Mobile_No] [bigint] NULL,
+	[Email] [nvarchar](50) NULL,
+	[Password] [nvarchar](50) NULL,
+	[Address] [nvarchar](50) NULL,
+	[Bank_Branch] [nvarchar](50) NULL,
+	[IFSC] [nchar](10) NULL,
+ CONSTRAINT [PK_Registration] PRIMARY KEY CLUSTERED 
+(
+	[Account_No] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
