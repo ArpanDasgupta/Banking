@@ -1,0 +1,66 @@
+﻿@model Banking.Models.RegisterModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>Warm Greetings @ViewBag.User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Account_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account_No)
+        </dd>
+
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mobile_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mobile_No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bank_Branch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bank_Branch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IFSC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IFSC)
+        </dd>
+
+    </dl>
+</div>
+
