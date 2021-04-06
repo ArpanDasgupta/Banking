@@ -1,0 +1,16 @@
+USE [Banking]
+GO
+
+
+CREATE PROCEDURE [dbo].[Change_Pwd]
+(             
+                @Account_NO                      bigint,
+                @new_pwd                  nvarchar(50)
+)
+AS
+BEGIN 
+               
+                              UPDATE Login SET [PASSWORD]=@new_pwd WHERE Account_NO=@Account_NO
+                              
+                             
+END
