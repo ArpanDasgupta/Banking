@@ -1,0 +1,7 @@
+USE Banking
+Go
+
+CREATE procedure [dbo].[sp_SaveChanges]
+@Account_No bigint ,@Account_Name nvarchar(50), @Mobile_No bigint, @Email nvarchar(50), @Password nvarchar(50), @Address nvarchar(50), @Bank_Branch nvarchar(50), @IFSC nchar(10)
+As
+Insert into Registration values(@Account_No,@Account_Name, @Mobile_No, @Email, @Password, @Address, @Bank_Branch, @IFSC)
