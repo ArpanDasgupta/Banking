@@ -1,0 +1,9 @@
+USE [Banking]
+GO
+
+CREATE procedure [dbo].[UpdateLoginDetails] 
+@Account_NO bigint, @CRN bigint, @Password nvarchar(50), @LastLogin datetime
+as
+update Login
+set CRN=@CRN,Password= @Password, LastLogin=@LastLogin 
+where Account_NO=@Account_NO
